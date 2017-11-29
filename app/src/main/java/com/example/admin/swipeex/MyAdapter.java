@@ -11,11 +11,10 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class MyAdapter extends FragmentStatePagerAdapter {
     int tabcount;
-    private String[] tabTitles = new String[]{"Tab1", "Tab2", "Tab3"};
+    private String[] tabTitles = new String[]{"Tab1", "Tab2"};
 
     public MyAdapter(FragmentManager fm) {
         super(fm);
-        this.tabcount = tabcount;
     }
 
     @Override
@@ -43,7 +42,7 @@ public class MyAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return tabTitles.length;
     }
 
 }
