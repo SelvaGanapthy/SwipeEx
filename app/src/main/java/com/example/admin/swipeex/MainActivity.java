@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MyAdapter(getSupportFragmentManager());
         vp.setAdapter(adapter);
         tabLayout.setupWithViewPager(vp);
+        tabLayout.getTabAt(0).setText("Tab1");
+        tabLayout.getTabAt(1).setText("Tab2");
     }
 
     @Override
