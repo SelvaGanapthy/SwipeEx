@@ -5,8 +5,11 @@
     android:background="#ff4433"
     android:orientation="vertical">
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="this is tab2" />
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
 </LinearLayout>
